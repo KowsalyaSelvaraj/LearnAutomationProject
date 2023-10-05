@@ -34,6 +34,8 @@ public class CountOccurenceCharString {
 		countOccurenceCharString.countNumOfOccurenceOfCharacters(sentenceString);
 		System.out.println("\n");
 		countOccurenceCharString.countNumOfOccurenceOfCharacterswithOrder(sentenceString);
+		System.out.println("\n");
+		countOccurenceCharString.numOfOccurencesOfGivenCharacter(sentenceString);
 	}
 
 	//"Hello team do it as soon as team"
@@ -46,7 +48,7 @@ public class CountOccurenceCharString {
 
 
 	}
-	
+
 	//"Hello team do it as soon as team"
 	//Number of distinct words is 6
 	public void numberOfDistinctWords(String sentence) {
@@ -63,7 +65,7 @@ public class CountOccurenceCharString {
 	}
 
 	//"Hello team do it as soon as team"
-		//Number of distinct words is 6
+	//Number of distinct words is 6
 	public void numberOfDistinctWordsTypetwo(String sentence) {
 
 		String[] stringArrayStrings = sentence.split(" ");
@@ -72,13 +74,13 @@ public class CountOccurenceCharString {
 
 		System.out.println("Number of distinct words found by Arrays.asList is "+stringSet.size());
 	}
-	
+
 	//"Hello team do it as soon as team"
 	//New Hash Map{as=2, Hello=1, team=2, do=1, it=1, soon=1}
 	//as 2 Hello 1 team 2 do 1 it 1 soon 1 
 	public void noOfTimesWordsOccur(String sentence) {
 		HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
-		
+
 		String[] stringArrayStrings = sentence.split(" ");
 		int count =0;
 		for(String wordString  : stringArrayStrings) {
@@ -89,15 +91,15 @@ public class CountOccurenceCharString {
 			}else {
 				hashMap.put(wordString, 1);
 			}
-			
+
 		}
 		System.out.println("Hash Map with count of each disticnt word"+hashMap);
-		
+
 		String newSentenceString = "";
 		for(Map.Entry<String,Integer> entry : hashMap.entrySet()) {
 			newSentenceString = newSentenceString+entry.getKey()+" "+entry.getValue()+" ";
 		}
-		
+
 		System.out.println(newSentenceString);
 	}
 	//"Hello team do it as soon as team"
@@ -105,7 +107,7 @@ public class CountOccurenceCharString {
 	//Hello 1 team 2 do 1 it 1 as 2 soon 1 
 	public void noOfTimesWordsOccurWithOrder(String sentence) {
 		LinkedHashMap<String, Integer> hashMap = new LinkedHashMap<String, Integer>();
-		
+
 		String[] stringArrayStrings = sentence.split(" ");
 		int count =0;
 		for(String wordString  : stringArrayStrings) {
@@ -116,21 +118,21 @@ public class CountOccurenceCharString {
 			}else {
 				hashMap.put(wordString, 1);
 			}
-			
+
 		}
 		System.out.println("LinkedHashMap with count of each disticnt word order maintained"+hashMap);
-		
+
 		String newSentenceString = "";
 		for(Map.Entry<String,Integer> entry : hashMap.entrySet()) {
 			newSentenceString = newSentenceString+entry.getKey()+" "+entry.getValue()+" ";
 		}
-		
+
 		System.out.println(newSentenceString);
 	}
 	//"Hello team do it as soon as team"
 	//Hello1 team2 do1 it1 as2 soon1 
 	public void noOfTimesWordsOccurWithoutHashMap(String sentence) {
-				
+
 		String[] stringArrayStrings = sentence.split(" ");
 		String newSentence="";
 		Set<String> stringSet = new LinkedHashSet<String>(Arrays.asList(stringArrayStrings));
@@ -138,28 +140,28 @@ public class CountOccurenceCharString {
 		for(String string : stringSet) {
 			count = 0;
 			for(int j=0;j<stringArrayStrings.length;j++) {
-				
+
 				if(string.equalsIgnoreCase(stringArrayStrings[j])) {
 					count++;
 				}
 			}
 			newSentence = newSentence + string +count+" ";
 		}
-	
+
 		System.out.println("Number Of words with its count without hashmap. using Set- LinkedHashSet"+newSentence);
 	}	
-	
-	
+
+
 	//count number of distinct letters
-//	Number of times each letter is dispalyed =>{a=4, s=3, t=3, d=1, e=3, H=1, i=1, l=2, m=2, n=1, o=4}
+	//	Number of times each letter is dispalyed =>{a=4, s=3, t=3, d=1, e=3, H=1, i=1, l=2, m=2, n=1, o=4}
 	public void countNumOfOccurenceOfCharacters(String sentence) {
-		
+
 		String sentenceWithoutSpaceString = sentence.replace(" ", "");
-		
+
 		char[] charArray = sentenceWithoutSpaceString.toCharArray();
 		HashMap<Character,Integer> hashMap = new HashMap<Character, Integer>();
 		int count = 0;
-		
+
 		for(int i=0;i<charArray.length;i++) {
 			count = 0;
 			if(hashMap.containsKey(charArray[i])) {
@@ -169,20 +171,21 @@ public class CountOccurenceCharString {
 				hashMap.put(charArray[i], 1);
 			}
 		}
-		
+
 		System.out.println("Number of times each letter is dispalyed =>"+hashMap);
 	}
-	
+
 	//count number of distinct letters
-//	Number of times each letter is dispalyed =>{a=4, s=3, t=3, d=1, e=3, H=1, i=1, l=2, m=2, n=1, o=4}
+	//	Number of times each letter is dispalyed =>{H=1, e=3, l=2, o=4, t=3, a=4, m=2, d=1, i=1, s=3, n=1}
+	//H1e3l2o4t3a4m2d1i1s3n1
 	public void countNumOfOccurenceOfCharacterswithOrder(String sentence) {
-		
+
 		String sentenceWithoutSpaceString = sentence.replace(" ", "");
-		
+
 		char[] charArray = sentenceWithoutSpaceString.toCharArray();
 		LinkedHashMap<Character,Integer> hashMap = new LinkedHashMap<Character, Integer>();
 		int count = 0;
-		
+
 		for(int i=0;i<charArray.length;i++) {
 			count = 0;
 			if(hashMap.containsKey(charArray[i])) {
@@ -192,16 +195,28 @@ public class CountOccurenceCharString {
 				hashMap.put(charArray[i], 1);
 			}
 		}
-		
+
 		System.out.println("Number of times each letter is dispalyed =>"+hashMap);
-		
+
 		String newString = "";
 		for(Map.Entry<Character, Integer> entry : hashMap.entrySet()) {
-			
+
 			newString = newString + entry.getKey()+entry.getValue();
 		}
-		
+
 		System.out.println(newString);
 	}
-	
+
+	//Write a java program to count the total number of occurrences of a given character in a string without using any loop 
+	//number of times a occurs 3
+	public void numOfOccurencesOfGivenCharacter(String sentence) {
+
+		String stringWithOutSpace = sentence.replace(" ","");
+
+		String stringWithoutCharString =stringWithOutSpace.replace("a", "");
+
+		int countOfChar = stringWithOutSpace.length() - stringWithoutCharString.length();
+
+		System.out.println("number of times a occurs "+countOfChar);		
+	}
 }
