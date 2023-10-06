@@ -1,0 +1,71 @@
+Programs
+https://www.softwaretestinghelp.com/java-coding-interview-programs/
+Q #1) Write a Java Program to reverse a string without using String inbuilt function. -- completed
+Q #2) Write a Java Program to reverse a string without using String inbuilt function reverse(). - completed
+Q #3) Write a Java Program to swap two numbers using the third variable.
+Q #4) Write a Java Program to swap two numbers without using the third variable.
+Q #5) Write a Java Program to count the number of words in a string using HashMap. - completed
+Q #6) Write a Java Program to iterate HashMap using While and advance for loop. 
+Q #7) Write a Java Program to find whether a number is prime or not.
+Q #8) Write a Java Program to find whether a string or number is palindrome or not.
+Q #9) Write a Java Program for the Fibonacci series.
+Q #10) Write a Java Program to iterate ArrayList using for-loop, while-loop, and advance for-loop.
+
+https://seleniumautomationtester.wordpress.com/2017/03/29/java-programs-asked-in-interviews/
+1. Java Program to Find Odd or Even number
+2. Java Program to Swap two numbers with using third variable
+3. Write a java program to find Prime number
+4. Java Program to Find Factorial on Number
+5. Java Program to Reverse Number -     Completed
+6. Java Program to print Fibonacci Series
+7. Write a java program to find Armstrong number
+8. Write a java program to find Palindrome number
+9. Write a java program to find number of digits in given number
+10. Write a java program to find the duplicate words and their number of occurrences in a string - Completed
+11. Write a java program to count the number of words in a string - Completed
+12. Write a java program to count the total number of occurrences of a given character in a string without using any loop 
+13. Write a java program to reverse a string - completed
+14. Java Program to Count Occurrences Of Each Character In String
+15. Write a java program to find duplicate characters in a string
+16. Write a java program to reverse each word of a given string - completed
+17. Write a java program to reverse a given string with preserving the position of spaces - completed
+
+
+https://www.techbeamers.com/java-coding-questions-software-testers/
+Question-1: Write code to filter duplicate elements from an array and print as a list.
+Question-2: Write code to sort the list of strings using Java collection.
+Question-3: Write a function to reverse a number in Java. - completed
+Question-4: Write a method to check prime no. in Java.
+Question-5: Write a Java program to find out the first two max values from an array.
+
+https://www.qafox.com/java-for-testers-interview-questions-and-answers-part-1/
+9) Write a Java program to find the largest number?
+13) Write a Java program to find odd and even numbers ?
+14) Write a Java program to compare two strings?
+18) Write a Java program to print the entered number in reverse? completed
+21) Write a Java program to print the alphabets using for loop?
+
+print Hello to IFmmp next letter
+program to remove spaces 
+convert integer to string vice versa
+
+Learn Automation online 
+1. How to reverse a String - Completed
+2. How to swap 2 numbers
+3. How to reverse a number - Completed
+4. how to print triangular pattern
+5. how to find the length of a string with or without inbuild method
+6. smallest number in array
+7. reverse the words in the sentences - Completed
+8. how to find whether a element is present in the array or not
+9. find the position of an alphabets
+10. number of occurances of a character in a string
+11. number of occurancs of a word in a string sentence 
+12. replace vowels with special character
+13. remove leading and tailing spaces without trim
+14. find number of vowels in string
+15. extract number from a given string and add them
+16 find the missing alphabet in the given string
+17. convert uppercase to lowercase vice versa without inbuilt method
+18. in s2b3 - > ssbbb
+19 ssbbb -> s2b3
