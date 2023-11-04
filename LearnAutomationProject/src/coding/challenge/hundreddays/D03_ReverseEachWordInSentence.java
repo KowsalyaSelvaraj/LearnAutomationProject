@@ -2,7 +2,7 @@ package coding.challenge.hundreddays;
 
 import java.util.Scanner;
 
-public class D3_ReverseEachWordInSentence {
+public class D03_ReverseEachWordInSentence {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

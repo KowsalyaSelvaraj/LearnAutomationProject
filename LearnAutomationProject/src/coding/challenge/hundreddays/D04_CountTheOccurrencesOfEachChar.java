@@ -2,7 +2,7 @@ package coding.challenge.hundreddays;
 
 import java.util.Scanner;
 
-public class D4_CountTheOccurrencesOfEachChar {
+public class D04_CountTheOccurrencesOfEachChar {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

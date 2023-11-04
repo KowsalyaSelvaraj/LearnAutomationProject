@@ -2,7 +2,7 @@ package coding.challenge.hundreddays;
 
 import java.util.Scanner;
 
-public class D2_ReverseTheSentance {
+public class D02_ReverseTheSentance {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
