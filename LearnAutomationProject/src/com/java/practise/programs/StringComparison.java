@@ -23,24 +23,24 @@ public class StringComparison {
 			System.out.println(string);
 		}
 
-
-		StringBuffer nameBuffer = new StringBuffer();
-		nameBuffer.append("helloteam");
-
-		char[] characterArray = nameBuffer.toString().toCharArray();
-		nameBuffer.charAt(0);
-
-		for(int i=0;i<nameBuffer.length();i++) {
-			nameBuffer.charAt(i);
-
-			nameBuffer.append("itsfine");
-		}
+//
+//		StringBuffer nameBuffer = new StringBuffer();
+//		nameBuffer.append("helloteam");
+//
+//		char[] characterArray = nameBuffer.toString().toCharArray();
+//		nameBuffer.charAt(0);
+//
+//		for(int i=0;i<nameBuffer.length();i++) {
+//			nameBuffer.charAt(i);
+//
+//			nameBuffer.append("itsfine");
+//		}
 
 		StringBuilder nameBuilder = new StringBuilder();
 		nameBuilder.append("helloteam");
 
 		char[] characterArray1 = nameBuilder.toString().toCharArray();
-		nameBuffer.charAt(0);
+		nameBuilder.charAt(0);
 
 		for(int i=0;i<nameBuilder.length();i++) {
 			System.out.println(	nameBuilder.charAt(i));
