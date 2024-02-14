@@ -24,6 +24,7 @@ public class CheckIfTwoArraysAreEqual {
 		System.out.println(value);
 	}
 
+	//doesn't work for all cases
 	public void sumApproach(long[] A, long[] B, int N) {
 
 		long sumA=0;

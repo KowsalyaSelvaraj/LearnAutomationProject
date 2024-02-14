@@ -153,11 +153,13 @@ public class CountOccurenceCharString {
 
 
 	//count number of distinct letters
+	//	Hello team do it as soon as team
 	//	Number of times each letter is dispalyed =>{a=4, s=3, t=3, d=1, e=3, H=1, i=1, l=2, m=2, n=1, o=4}
 	public void countNumOfOccurenceOfCharacters(String sentence) {
 
 		String sentenceWithoutSpaceString = sentence.replace(" ", "");
 
+		//Helloteamdoitassoonasteam
 		char[] charArray = sentenceWithoutSpaceString.toCharArray();
 		HashMap<Character,Integer> hashMap = new HashMap<Character, Integer>();
 		int count = 0;

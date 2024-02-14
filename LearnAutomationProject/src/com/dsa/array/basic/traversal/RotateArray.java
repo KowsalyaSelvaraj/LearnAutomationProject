@@ -27,6 +27,9 @@ public class RotateArray {
 		//K==N 
 		//K>N K%N
 		//K<N
+		//	{1,2,3,4,5}
+		//{5,4,3,2,1}
+		//{3,4,5,1,2}
 		int num=0;
 		for(int m:arr)
 		{
@@ -83,6 +86,9 @@ public class RotateArray {
 		int rotateTimes = 1;
 		int i=0;
 		int j=n-1;
+		//reverse all the elements
+		//reverse 1st part  [k elements]
+		//reverse 2nd part [N-k elements]
 		//{5,4,3,2,1}
 		//{5,1,2,3,4}
 		int num=0;
